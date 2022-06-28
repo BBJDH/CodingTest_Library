@@ -3,16 +3,66 @@
 #include<vector>
 #include<algorithm>
 #include<set>
+#include<cassert>
 
 using namespace std;
 
-int main()
-{
-	cin.tie(NULL);
-	ios_base::sync_with_stdio(false);
 
-	string alphabat;
-	cin >> alphabat;
+#pragma region 골드
+#pragma region 0 만들기
+//
+//void Solution(int const current_num, int const max_num,int prev_calc_num, int result, string str)
+//{
+//	if (current_num == max_num)
+//	{
+//		result += prev_calc_num;
+//		if(result==0)
+//			cout << str <<"\n";
+//		return;
+//	}
+//	//1+2 3 4
+//	int new_calc_num = 0;
+//	if (prev_calc_num > 0)
+//		new_calc_num = prev_calc_num * 10 + current_num + 1;
+//	else
+//		new_calc_num = prev_calc_num * 10 - (current_num + 1);
+//
+//	//n+1번째 계산해야할 변수는 prev_calc_num 이고 함수에 result에 계산해서 넣어
+//	//n+1번째, 종단점, 바뀌는 계산값, 다음지점 누적 계산값, 다음지점 누적 문자열
+//
+//	Solution(current_num+1,max_num, new_calc_num, result , str+" "+std::to_string(current_num + 1) );
+//	Solution(current_num+1,max_num, current_num + 1, result + prev_calc_num, str+"+"+std::to_string(current_num + 1) );
+//	Solution(current_num+1,max_num, -(current_num + 1), result + prev_calc_num, str+"-"+std::to_string(current_num + 1) );
+//}
+//
+//
+//int main()
+//{
+//	cin.tie(NULL);
+//	ios_base::sync_with_stdio(false);
+//
+//
+//
+//	int test_case = 0;
+//	cin >> test_case;
+//
+//	while (test_case--)
+//	{
+//		int num = 0;
+//		cin >> num;
+//		//내가 n번째 수 기준 계산값을 계산했어 계산해줘
+//		//n번째, 종단점, 바뀌는 계산값, 현재 까지 누적 계산값, 누적된 문자열
+//		Solution(1, num, 1,0, "1");
+//		cout << "\n";
+//
+//	}
+//
+//	return 0;
+//}  
+#pragma endregion
+
+
+#pragma endregion
 
 
 
