@@ -1,11 +1,14 @@
 
+
 #include <iostream>
 #include <stack>
+#include <queue>
 using namespace std;
 
 int Map[101][101]{};
 int Visit[101]{};
-stack<int> check;
+stack<int> DPS_Stack;
+queue<int> BFS_Queue;
 int Curupted_Num = 0;
 void DFS_Recursion(int const Computer_Index, int& Curupted_Num)
 {
@@ -21,22 +24,37 @@ void DFS_Recursion(int const Computer_Index, int& Curupted_Num)
 }
 void DFS_Loop()
 {
-	while (not check.empty())
+	while (not DPS_Stack.empty())
 	{
-		int Visit_Computer_Num = check.top();
-		check.pop();
+		int Visit_Computer_Num = DPS_Stack.top();
+		DPS_Stack.pop();
 		for (int i = 1; i < 101; i++)
 		{
 			if (Map[Visit_Computer_Num][i] and (not Visit[i]))
 			{
-				check.push(i);
+				DPS_Stack.push(i);
 				Visit[i] = true;
 				Curupted_Num++;
 			}
 		}
 	}
-
-
+}
+void BFS_Loop()
+{
+	while (not BFS_Queue.empty())
+	{
+		int Visit_Computer_Num = BFS_Queue.front();
+		BFS_Queue.pop();
+		for (int i = 1; i < 101; i++)
+		{
+			if (Map[Visit_Computer_Num][i] and (not Visit[i]))
+			{
+				BFS_Queue.push(i);
+				Visit[i] = true;
+				Curupted_Num++;
+			}
+		}
+	}
 }
 int main()
 {
@@ -58,9 +76,12 @@ int main()
 		Map[Computer_Index][Edge_Computer_Index] = Map[Edge_Computer_Index][Computer_Index] = 1;
 	}
 	Visit[1] = 1;
-	check.push(1);
-	DFS_Loop();
+	//DPS_Stack.push(1);
+	//DFS_Loop();
+	BFS_Queue.push(1);
+	BFS_Loop();
 	cout << Curupted_Num;
 
 	return 0;
 }
+

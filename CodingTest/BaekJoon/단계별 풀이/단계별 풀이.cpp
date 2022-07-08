@@ -1,4 +1,38 @@
 
+#include <iostream>
+#include <string>
+using namespace std;
+
+int Vertexes_Link[26][26]{};
+
+int main()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	int Line_Num = 0;
+	cin >> Line_Num;
+	int Row_Index = 1;
+	while (Line_Num--)
+	{
+		string Input_Str;
+		cin >> Input_Str;
+		int size = Input_Str.length();
+		for (int i = 0; i < Input_Str.length(); i++)
+		{
+			Vertexes_Link[Row_Index][i+1] = Input_Str[i] - '0';
+		}
+		Row_Index++;
+	}
+
+	return 0;
+}
+
+
+
+
+
+
 #pragma region °ñµå
 #pragma region 0 ¸¸µé±â
 //
