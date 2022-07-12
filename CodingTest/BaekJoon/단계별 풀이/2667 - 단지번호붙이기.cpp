@@ -15,6 +15,7 @@ struct Position
 };
 int Vertexes_Link[26][26]{};
 int Visit[26][26]{};
+Position const Direction[4]{ {-1,0}, {0,-1}, {0,1}, {1,0} };
 stack<Position> DFS_Stack;
 vector<int> Groub_Num{};
 
@@ -38,37 +39,17 @@ bool Check_None_Visit_Node(Position const Node_Pos)
 }
 void Push_Edge_Nodes(Position const Node_Pos)
 {
-	if (Node_Pos.x > 1)
-	{//왼
-		if (Check_None_Visit_Node({ Node_Pos.x - 1,Node_Pos.y }))
+	Position New_Direction[4]{};
+	for (int i = 0; i < 4; i++)
+	{
+		New_Direction[i] = { Node_Pos.x + Direction[i].x, Node_Pos.y + Direction[i].y };
+		if (New_Direction[i].x > 0 and New_Direction[i].x < 26 and New_Direction[i].y>0 and New_Direction[i].y < 26)
 		{
-			DFS_Stack.push({ Node_Pos.x - 1,Node_Pos.y });
-			Visit[Node_Pos.y][Node_Pos.x - 1] = 1;
-		}
-	}
-	if (Node_Pos.y > 1)
-	{//위
-		if (Check_None_Visit_Node({ Node_Pos.x,Node_Pos.y - 1 }))
-		{
-			DFS_Stack.push({ Node_Pos.x,Node_Pos.y - 1 });
-			Visit[Node_Pos.y - 1][Node_Pos.x] = 1;
-		}
-	}
-	if (Node_Pos.x < 25)
-	{//오른
-		if (Check_None_Visit_Node({ Node_Pos.x + 1,Node_Pos.y }))
-		{
-
-			DFS_Stack.push({ Node_Pos.x + 1,Node_Pos.y });
-			Visit[Node_Pos.y][Node_Pos.x + 1] = 1;
-		}
-	}
-	if (Node_Pos.y < 25)
-	{//아래
-		if (Check_None_Visit_Node({ Node_Pos.x,Node_Pos.y + 1 }))
-		{
-			DFS_Stack.push({ Node_Pos.x,Node_Pos.y + 1 });
-			Visit[Node_Pos.y + 1][Node_Pos.x] = 1;
+			if (Check_None_Visit_Node(New_Direction[i]))
+			{
+				DFS_Stack.push(New_Direction[i]);
+				Visit[New_Direction[i].y][New_Direction[i].x] = 1;
+			}
 		}
 	}
 	return;
@@ -115,10 +96,7 @@ int main()
 		}
 		Row_Index++;
 	}
-	while (DFS_Loop())
-	{
-
-	}
+	while (DFS_Loop()) {}
 	sort(Groub_Num.begin(), Groub_Num.begin() + Groub_Num.size());
 	cout << Groub_Num.size() << "\n";
 
