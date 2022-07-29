@@ -22,6 +22,7 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaekJoon\단계별 풀이\15973 - 두 박스.cpp" />
     <ClCompile Include="BaekJoon\단계별 풀이\단계별 풀이.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
