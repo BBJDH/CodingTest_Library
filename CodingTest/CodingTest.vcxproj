@@ -26,7 +26,6 @@
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="추천시리즈\15649 - N과 M(1).cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
