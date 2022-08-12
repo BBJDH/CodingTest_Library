@@ -45,6 +45,7 @@ int main()
 		RightBiggerNums의 top을 확인. 비어있다면 -1 아니면 Top을 출력배열에 삽입
 		*/
 	}
+
 	while (!StackResult.empty())
 	{
 		cout << StackResult.top() << " ";
