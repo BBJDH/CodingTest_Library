@@ -1,6 +1,17 @@
 
 
 #pragma region 골드
+/*
+
+N과M 3
+
+모든 수의 합의 평균이 n-1경우 부터 하나씩 아래로 내려가면서 탐색
+평균 n-1은 N개의 수 모두 n-1경우 밖에 없음
+n-2는 마찬가지로 모두 n-2이거나 n-2보다 큰 수와 n-2보다 작은 수와의 조합으로 평균 n-2가 가능
+모든 입력받은 수의 합/N 부터 접근 이이상은 나올수 없는 평균
+
+*/
+
 #pragma region 0 만들기
 //
 //void Solution(int const current_num, int const max_num,int prev_calc_num, int result, string str)
