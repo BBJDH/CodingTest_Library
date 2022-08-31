@@ -26,7 +26,6 @@
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="정렬\1181 - 단어 정렬.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
