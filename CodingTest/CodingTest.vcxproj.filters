@@ -26,9 +26,6 @@
     <ClCompile Include="BaekJoon\정리되지않음\단계별 풀이.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon\이분탐색\2805 - 나무자르기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
