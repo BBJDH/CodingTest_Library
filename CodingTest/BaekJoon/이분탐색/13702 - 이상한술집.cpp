@@ -1,4 +1,9 @@
+/*
+13702 - 이상한 술집
 
+이분탐색 문제이다
+
+*/
 #include<iostream>
 #include<vector>
 using namespace std;
