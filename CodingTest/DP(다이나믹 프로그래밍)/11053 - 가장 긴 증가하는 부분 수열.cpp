@@ -25,6 +25,8 @@ void CheckMaxSize()
 		int SequenceSize = 0;
 		for (int j = 0; j < i; j++)
 		{
+			//i번째 수가 J번째 수보다 크면서 j번째에서의 최대 수열이 현재 업데이트한 수열크기보다 크다면
+			//이어나간다
 			if (Sequence[i] > Sequence[j] and SequenceSize < MaxSize[j])
 				SequenceSize = MaxSize[j];
 		}
