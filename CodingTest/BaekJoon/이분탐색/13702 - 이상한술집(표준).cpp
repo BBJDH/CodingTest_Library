@@ -33,10 +33,11 @@ int GetDivide(int const Num)
 
 void Solution()
 {
+	//Left 와 Right 는 탐색 범위 밖으로 지정한다
 	long long Left = -1;
 	long long Right = INT32_MAX;
 	long long Mid = 0;
-	while (Left + 1 < Right)
+	while (Left + 1 < Right)	//Left와 Right 차이가 1이되어 탐색범위가 없어지면 정지
 	{
 		Mid = (Left + Right) / 2;
 
