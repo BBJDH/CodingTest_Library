@@ -63,7 +63,6 @@ int main()
 		cin >> InputNum;
 		Nums.emplace_back(InputNum);
 	}
-	sort(Nums.begin(), Nums.end());
 	Search();
 	cout << Result.Left << " " << Result.Right;
 
