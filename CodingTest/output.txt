@@ -1,4 +1,1 @@
-1
-1
-B Destructor Call!
-A Destructor Call!
+2
