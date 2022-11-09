@@ -80,7 +80,6 @@ vector<int> Sequence{};
 vector<int> MaxSequence{};
 int InputSize = 0;
 
-
 void MakeMaxSequence()
 {
 	MaxSequence.push_back(1000000);
