@@ -22,7 +22,6 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaekJoon\그래프\최소 스패닝 트리\크루스칼\1197 - 최소 스패닝 트리.cpp" />
     <ClCompile Include="TestSpace.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
