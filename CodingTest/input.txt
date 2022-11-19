@@ -1,1 +1,5 @@
-40
+4
+aaaabbbba
+abab
+abcabc
+a
