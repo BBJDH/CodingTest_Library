@@ -1,10 +1,9 @@
-/*
+ /*
 2581 - 소수
 
 에라토스테네스의 체를 이용,
 숫자 범위는 모두 10000보다 작은 자연수이므로 배열크기는 10001로 선정
 먼저 에라토스테네스의 체를 시행
-
 
 시작수, 끝수를 입력 받음
 
@@ -14,7 +13,6 @@
 #include<bitset>
 
 using namespace std;
-
 
 bitset<10001> EratosthenesNum{};
 int StartNum = 0, EndNum = 0;
@@ -33,7 +31,6 @@ void Check_NonPrimeNum()
 		}
 	}
 }
-
 
 void Solution()
 {
