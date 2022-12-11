@@ -117,6 +117,5 @@ int main()
 	cin >> dest;
 	BinerySearch(dest);
 
-
 	return 0;
 }
