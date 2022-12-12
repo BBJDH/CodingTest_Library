@@ -49,26 +49,8 @@ int main()
 		int secondNum = Houses.top();
 		Houses.pop();
 		time += secondNum;
-		Houses.push(firstNum- secondNum);
+		Houses.push(firstNum - secondNum);
 		firstNum = 0;
-		//if (currentTarget < sideHouse)
-		//{
-		//	//치우다가 이웃집눈이 더 많아진다면
-		//	//치우고 남은것 다시 우선순우위 큐에 삽입
-
-		//	sideHouse -= currentTarget;
-		//	Houses.push(sideHouse);
-		//	time += currentTarget;
-		//	currentTarget = 0;
-
-		//}
-		//else
-		//{
-		//	currentTarget -= sideHouse;
-		//	time += sideHouse;
-		//	Houses.push(currentTarget);
-		//	currentTarget = 0;
-		//}
 	}
 	time += firstNum;
 
