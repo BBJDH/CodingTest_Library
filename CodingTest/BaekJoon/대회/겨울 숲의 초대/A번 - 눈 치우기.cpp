@@ -70,7 +70,7 @@ int main()
 		//	currentTarget = 0;
 		//}
 	}
-	time += currentTarget;
+	time += firstNum;
 
 
 	if (time > 1440)
