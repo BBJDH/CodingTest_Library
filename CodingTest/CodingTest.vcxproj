@@ -22,6 +22,7 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaekJoon\대회\크리스마스트리 시뮬레이션\완전 이진트리 구성을 위한 테스트.cpp" />
     <ClCompile Include="TestSpace.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
