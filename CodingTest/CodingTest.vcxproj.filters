@@ -26,7 +26,7 @@
     <ClCompile Include="TestSpace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon\수학\사칙연산\13258 - 복권+은행.cpp">
+    <ClCompile Include="BaekJoon\문자열파싱\17413 - 단어 뒤집기 2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
