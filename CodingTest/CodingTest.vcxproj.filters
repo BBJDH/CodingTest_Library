@@ -26,7 +26,7 @@
     <ClCompile Include="TestSpace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon\정수론\25487 - 단순한 문제(Large).cpp">
+    <ClCompile Include="BaekJoon\자료구조\덱\20923 - 숫자 할리갈리 게임.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
