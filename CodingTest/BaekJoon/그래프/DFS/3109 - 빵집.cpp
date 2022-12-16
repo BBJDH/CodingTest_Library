@@ -3,11 +3,10 @@
  *
  *
  *맨 위 혹은 맨 아래부터 파이프를 연결해나가 완료 되었다면 이 길을 1개로 인정한다
- *(방문 처리도 진행한다.)
+ *(방문 처리도 진행한다. 회수할 필요는 없다.)
  *차례대로 더이상 파이프를 연결 불가능할때까지 지속한다.
  *
  */
-
 
 #include <iostream>
 
@@ -57,7 +56,6 @@ void Solution()
 	{
 		if (DFS({ 0,i }))
 			count++;
-
 	}
 	cout << count;
 }
@@ -67,7 +65,6 @@ int main()
 {
 	cin.tie(NULL);
 	ios_base::sync_with_stdio(false);
-
 
 	cin >> R >> C;
 
