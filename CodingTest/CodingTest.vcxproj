@@ -22,7 +22,7 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaekJoon\문자열파싱\17413 - 단어 뒤집기 2.cpp" />
+    <ClCompile Include="BaekJoon\정수론\25487 - 단순한 문제(Large).cpp" />
     <ClCompile Include="TestSpace.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
