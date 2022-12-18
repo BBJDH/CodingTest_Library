@@ -14,7 +14,7 @@
  * -16 -22 -57 -33 99
  * 7 -76 -11 77 15
  *
- *첫 줄 
+ *첫 줄
  * 10 25 7 8 13
  *
  *시작지점은 왼쪽 끝으로 정해져 있으므로 최대값의 업데이트는 무조건 오른쪽 방향으로 진행된다
@@ -98,23 +98,23 @@ void MakeDP()
 				DP[y][x] = DP[y - 1][x] + Map[y][x];
 				continue;
 			}
-			DP[y][x] = max( DP[y - 1][x], DP[y][x-1]) + Map[y][x];
+			DP[y][x] = max(DP[y - 1][x], DP[y][x - 1]) + Map[y][x];
 		}
 
 		//왼쪽 탐사 업데이트
 		//같은 라인 왼쪽 DP가 이미 존재하기 때문에 임시 배열 생성
 
 		int tempDP[1000]{};
-		for (int x = Size.X-1; x >= 0; x--)
+		for (int x = Size.X - 1; x >= 0; x--)
 		{
-			
+
 			if (x == Size.X - 1)
 			{
 				tempDP[x] = DP[y - 1][x] + Map[y][x];
 				DP[y][x] = max(DP[y][x], tempDP[x]);
 				continue;
 			}
-			tempDP[x] = max(DP[y - 1][x], tempDP[x+1]) + Map[y][x];
+			tempDP[x] = max(DP[y - 1][x], tempDP[x + 1]) + Map[y][x];
 			DP[y][x] = max(DP[y][x], tempDP[x]);
 		}
 	}
@@ -127,9 +127,9 @@ int main()
 
 	cin >> Size.Y >> Size.X;
 
-	for(int y =0; y< Size.Y; y++)
+	for (int y = 0; y < Size.Y; y++)
 	{
-		for(int x=0; x< Size.X; x++)
+		for (int x = 0; x < Size.X; x++)
 		{
 			cin >> Map[y][x];
 		}

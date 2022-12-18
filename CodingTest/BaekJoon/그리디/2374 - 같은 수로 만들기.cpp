@@ -47,9 +47,9 @@ int main()
 			continue;
 		}
 		if (cmpNum < InputNum)
-			result += InputNum - cmpNum;
+			result += InputNum-cmpNum;
 		cmpNum = InputNum;
 	}
-	printf("%lld", result + (maxNum - cmpNum));
+	printf("%lld",result + (maxNum-cmpNum));
 	return 0;
 }
