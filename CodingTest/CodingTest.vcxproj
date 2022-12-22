@@ -22,7 +22,7 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaekJoon\그리디\2437 - 저울.cpp" />
+    <ClCompile Include="BaekJoon\DP(다이나믹 프로그래밍)\LCS\11056 - 두 부분 문자열.cpp" />
     <ClCompile Include="TestSpace.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
