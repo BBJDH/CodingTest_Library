@@ -71,7 +71,7 @@ void CallDP(int const CurrentStep, int const Left, int const Right)
 		DP[CurrentStep + 1][Left][NextStep] + Cost[Right][NextStep]
 	);
 
-}
+} 
 
 
 int main()
