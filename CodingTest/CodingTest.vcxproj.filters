@@ -26,6 +26,12 @@
     <ClCompile Include="TestSpace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BaekJoon\대회\ShowMeTheCode - 3회차 코딩테스트\A번 - 신을 모시는 사당.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekJoon\대회\ShowMeTheCode - 3회차 코딩테스트\B번 - 도넛 행성.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

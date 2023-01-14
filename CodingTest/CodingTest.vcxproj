@@ -22,6 +22,8 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaekJoon\대회\ShowMeTheCode - 3회차 코딩테스트\A번 - 신을 모시는 사당.cpp" />
+    <ClCompile Include="BaekJoon\대회\ShowMeTheCode - 3회차 코딩테스트\B번 - 도넛 행성.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
