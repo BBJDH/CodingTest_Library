@@ -32,3 +32,43 @@ int main()
 
 	return 0;
 }
+
+/*
+* 
+* 우선순위 큐를 활용
+#include <string>
+#include <vector>
+#include <queue>
+#include<iostream>
+using namespace std;
+
+int solution(vector<int> scoville, int K) {
+
+    priority_queue<long long,vector<long long>,greater<>> Shake{};
+    int answer = 0;
+
+    for(auto const & elem : scoville)
+        Shake.push(elem);
+
+    while(!Shake.empty())
+    {
+        if(Shake.top()>=K)
+        {
+            return answer;
+        }
+        long long num1 = Shake.top();
+        Shake.pop();
+        if(Shake.empty())
+            break;
+        long long num2 = Shake.top();
+        Shake.pop();
+        Shake.push(num1+num2*2);
+        answer++;
+
+        //cout<<num;
+    }
+
+    return -1;
+}
+
+*/
