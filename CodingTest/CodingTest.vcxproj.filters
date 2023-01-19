@@ -26,12 +26,6 @@
     <ClCompile Include="TestSpace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Programers\﻿2018 KAKAO BLIND RECRUITMENT[3차] 압축.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Programers\﻿연습문제 - 최댓값과 최솟값.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
