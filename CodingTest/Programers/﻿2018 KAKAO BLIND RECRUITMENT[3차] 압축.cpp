@@ -15,11 +15,12 @@
  #include <map>
  using namespace std;
  
- vector<int> answer{};
  
  vector<int> solution(string msg)
  {
      map<string, int> Dictionary{};
+     vector<int> answer{};
+
      int Index = 0;
      int D_Count = 27;
      while (Index < msg.size())
@@ -60,8 +61,8 @@
  
  
      solution("TOBEORNOTTOBEORTOBEORNOT");
-     for (auto const& elem : answer)
-         cout << elem << " ";
+     //for (auto const& elem : answer)
+     //    cout << elem << " ";
      return 0;
  }
 
