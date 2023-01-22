@@ -15,7 +15,6 @@
  #include <map>
  using namespace std;
  
- 
  vector<int> solution(string msg)
  {
      map<string, int> Dictionary{};
@@ -34,12 +33,13 @@
              if (Index + Size > msg.size())
              {
                  answer.push_back(Dictionary[ToFindStr]);
+
                  return answer;
              }
          }
          if (Size == 2)
          {
-             answer.push_back(msg[Index] - 'A' + 1);
+             answer.push_back(1/*msg[Index] - 'A' + 1*/);
              Dictionary[ToFindStr] = D_Count;
              D_Count++;
              Index++;
@@ -54,15 +54,16 @@
  
      return answer;
  }
+
  int main()
  {
      cin.tie(NULL);
      ios_base::sync_with_stdio(false);
  
- 
-     solution("TOBEORNOTTOBEORTOBEORNOT");
-     //for (auto const& elem : answer)
-     //    cout << elem << " ";
+     vector<int> test = solution("TOBEORNOTTOBEORTOBEORNOT");
+     for (auto const& elem : test)
+         cout << elem << " ";
      return 0;
  }
 
+ //< input.txt > output.txt
