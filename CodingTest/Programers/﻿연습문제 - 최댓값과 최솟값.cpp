@@ -7,7 +7,6 @@ getline으로 문자열을 받아와 ' '로 끊어서 스트림을 읽는다
 반환값이 문자열 이므로 다시 to_string으로 파싱한다.
 
  */
-
  
  #include <iostream>
  #include <string>
