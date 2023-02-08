@@ -26,9 +26,6 @@
     <ClCompile Include="TestSpace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon\백트래킹\vector로추가제거\6603 - 로또.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
