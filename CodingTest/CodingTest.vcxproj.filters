@@ -26,6 +26,9 @@
     <ClCompile Include="TestSpace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BaekJoon\그리디\그래프 탐색처럼 보이는 것\16953 - A → B .cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
