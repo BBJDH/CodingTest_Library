@@ -26,9 +26,6 @@
     <ClCompile Include="TestSpace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BaekJoon\수학\유클리드 호제법\1934 - 최소공배수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
