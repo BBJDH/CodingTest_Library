@@ -6,41 +6,44 @@
  *00*****		- b 2 s 5
  *0*******		- b 1 s 7
  **********		- b 0 s 9
+ * 
+ * 역방향은 반대로 다만 다이아몬드모양이 나오기 위해 
+ * 1부터 시작한다.
  *
  */
 
- //#include<iostream>
- //using namespace std;
- //
- //int main()
- //{
- //	int CountOfLine =0;
- //	cin >> CountOfLine;
- //
- //	for(int blank = CountOfLine-1; blank>=0; blank--)
- //	{
- //		for(int i=0;i< blank; i++)
- //		{
- //			cout << " ";
- //		}
- //		for (int i = 0; i < (CountOfLine- blank)*2-1; i++)
- //		{
- //			cout << "*";
- //		}
- //		cout << "\n";
- //	}
- //	//역방향
- //	for (int blank = 1; blank < CountOfLine ; blank++)
- //	{
- //		for (int i = 0; i < blank; i++)
- //		{
- //			cout << " ";
- //		}
- //		for (int i = 0; i < (CountOfLine - blank) * 2 - 1; i++)
- //		{
- //			cout << "*";
- //		}
- //		cout << "\n";
- //	}
- //
- //}
+ #include<iostream>
+ using namespace std;
+ 
+ int main()
+ {
+ 	int CountOfLine =0;
+ 	cin >> CountOfLine;
+ 
+ 	for(int blank = CountOfLine-1; blank>=0; blank--)
+ 	{
+ 		for(int i=0;i< blank; i++)
+ 		{
+ 			cout << " ";
+ 		}
+ 		for (int i = 0; i < (CountOfLine- blank)*2-1; i++)
+ 		{
+ 			cout << "*";
+ 		}
+ 		cout << "\n";
+ 	}
+ 	//역방향
+ 	for (int blank = 1; blank < CountOfLine ; blank++)
+ 	{
+ 		for (int i = 0; i < blank; i++)
+ 		{
+ 			cout << " ";
+ 		}
+ 		for (int i = 0; i < (CountOfLine - blank) * 2 - 1; i++)
+ 		{
+ 			cout << "*";
+ 		}
+ 		cout << "\n";
+ 	}
+ 
+ }
