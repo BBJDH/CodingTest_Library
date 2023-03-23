@@ -1,1 +1,12 @@
-24
+acs
+act
+acw
+ast
+asw
+atw
+cis
+cit
+ciw
+ist
+isw
+itw
