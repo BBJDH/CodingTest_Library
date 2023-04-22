@@ -136,7 +136,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
     </ClCompile>
