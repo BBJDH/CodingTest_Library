@@ -7,76 +7,7 @@
  * n = 원의 개수
  * m = 각 원의 배열 크기
  *
- * 그리디로 풀었다.
- * 가장 안쪽 동심원의 번호와 정렬상태를 묶어 배열을 만들고
- * 이것을 첫 최적해로 둔다.
- *
- * 이후 다음 주어지는 동심원을 돌려가며 다음 최적 배열을 찾는다.
- *
- * 최초 초기화시 정렬상태를 0으로 두고 정렬에 성공한다면, 1로 업데이트 하고 갯수 또한 업데이트 한다.
- *분할된 갯수만큼 원판을 돌려 최적 해를 만들고, 다음 동심원으로 진행한다
- *
- *최종 최적해를 출력한다.
- *
  */
-
-
- 
- //struct _int2
- //{
- //	int Num;
- //	int IsAscending;
- //};
- //
- //int MakeBestResult(vector<_int2> & BestResult, vector<int> & const Circle)
- //{
- //	int MaxResult = 0;
- //	vector<_int2> MaxResultToSave{};
- //	for(int Start =0; Start < BestResult.size(); Start++)
- //	{
- //		int CurrentResult = 0;
- //		vector<_int2> CurrentResultToSave{};
- //
- //		for(int InnerIndex=0,CircleIndex = Start; InnerIndex< BestResult.size(); InnerIndex++, CircleIndex++)
- //		{
- //			CircleIndex = CircleIndex % BestResult.size();
- //			CurrentResultToSave.push_back({ Circle[CircleIndex],0});
- //			if(Circle[CircleIndex]> BestResult[InnerIndex].Num and BestResult[InnerIndex].IsAscending==1)
- //			{
- //				CurrentResult++;
- //				CurrentResultToSave[InnerIndex].IsAscending = 1;
- //			}
- //		}
- //		if(CurrentResult> MaxResult)
- //		{
- //			MaxResult = CurrentResult;
- //			MaxResultToSave = CurrentResultToSave;
- //		}
- //	}
- //	BestResult = MaxResultToSave;
- //	return  MaxResult;
- //}
- //
- //int Solution(int n, int m, vector<vector<int>> circles)
- //{
- //	int answer = 0;
- //
- //	vector<_int2> BestResult{};
- //
- //	for(int const elem : circles[0])
- //	{
- //		BestResult.push_back({elem,1});
- //	}
- //
- //	for(int i=1; i< circles.size(); i++)
- //	{
- //		answer = MakeBestResult(BestResult, circles[i]);
- //	}
- //
- //
- //	return answer;
- //}
- //
 
 
 /*
