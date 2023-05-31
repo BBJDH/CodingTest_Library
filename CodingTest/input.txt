@@ -1,2 +1,4 @@
-3
-argaethryjstyjdtyjdtyjdtukdgjdtydtujdtyjdtukdtu
+3 7
+4 0 0 0 0 0 0
+0 0 0 2 0 0 0
+0 0 0 0 0 0 4
