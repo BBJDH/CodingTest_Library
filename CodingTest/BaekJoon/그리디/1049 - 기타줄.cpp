@@ -16,43 +16,109 @@
  *정렬하지않고 vector도 필요없이 min값만을 취하여 패키지와 낱개구매의
  *최소가격만 가지고 계산하는것이 현명하다.
  *
+ *
+ *
+ *개선 내용
+ *
+ *각 입력 받은 세트 가격과 한 가격은 브랜드와 상관없이
+ *가장 낮은 세트가격과 가장 낮은 한개 가격만이 필요하다.
+ *
+ *따라서  min을 통해 위의 두값만을 취하여
+ *
+ *남은 구매 갯수가 6개 이상이라면 세트 가격과 한개가격 * 6 을  비교하여 구매하고
+ *남은 구매 갯수가 6개 미만이라면 세트 가격과 한개가격 * 구매갯수 를 비교하여 반복문을 통해 계산한다. 
+ *
  */
+
+
+
+
 #include <iostream>
-#include <vector>
-#include <algorithm>
 
 using namespace std;
 
-int N = 0, M = 0;
-vector<int> PricePackage{};
-vector<int> PriceAnItem{};
-
 int main()
 {
-	cin.tie(NULL);
+	cin.tie(nullptr);
 	ios_base::sync_with_stdio(false);
+
+	int NumOfPurchases = 0;
+	int BrandNum = 0;
+	cin >> NumOfPurchases >> BrandNum;
+
+	int PriceOfSet = 1001;
+	int PriceOfOne = 1001;
+
+	while (BrandNum--)
+	{
+		int InputSet = 0, InputOne = 0;
+		cin >> InputSet >> InputOne;
+
+		PriceOfSet = min(PriceOfSet, InputSet);
+		PriceOfOne = min(PriceOfOne, InputOne);
+	}
+
 	int Result = 0;
 
-	cin >> N >> M;
-	for (int i = 0; i < M; i++)
+	while ((NumOfPurchases < 6 and PriceOfSet < PriceOfOne * NumOfPurchases) or (NumOfPurchases >= 6 and PriceOfSet < PriceOfOne * 6))
 	{
-		int package = 0, anItem = 0;
-		cin >> package >> anItem;
-		PricePackage.push_back(package);
-		PriceAnItem.push_back(anItem);
+		Result += PriceOfSet;
+		NumOfPurchases -= 6;
 	}
-	sort(PricePackage.begin(), PricePackage.end());
-	sort(PriceAnItem.begin(), PriceAnItem.end());
+	if (NumOfPurchases > 0)
+	{
+		Result += NumOfPurchases * PriceOfOne;
+	}
 
-	Result += (N / 6) * PricePackage[0];
-
-	Result += min((N % 6) * PriceAnItem[0], PricePackage[0]);
-
-	if (N * PriceAnItem[0] > Result)
-		cout << Result;
-	else
-		cout << N * PriceAnItem[0];
-
+	cout << Result;
 
 	return 0;
 }
+
+
+
+
+
+/*
+ *
+ * 개선 전 코드
+ */
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//
+//using namespace std;
+//
+//int N = 0, M = 0;
+//vector<int> PricePackage{};
+//vector<int> PriceAnItem{};
+//
+//int main()
+//{
+//	cin.tie(NULL);
+//	ios_base::sync_with_stdio(false);
+//	int Result = 0;
+//
+//	cin >> N >> M;
+//	for (int i = 0; i < M; i++)
+//	{
+//		int package = 0, anItem = 0;
+//		cin >> package >> anItem;
+//		PricePackage.push_back(package);
+//		PriceAnItem.push_back(anItem);
+//	}
+//	sort(PricePackage.begin(), PricePackage.end());
+//	sort(PriceAnItem.begin(), PriceAnItem.end());
+//
+//	Result += (N / 6) * PricePackage[0];
+//
+//	Result += min((N % 6) * PriceAnItem[0], PricePackage[0]);
+//
+//	if (N * PriceAnItem[0] > Result)
+//		cout << Result;
+//	else
+//		cout << N * PriceAnItem[0];
+//
+//
+//	return 0;
+//}
