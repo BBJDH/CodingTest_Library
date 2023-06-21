@@ -26,6 +26,9 @@
     <ClCompile Include="TestSpace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BaekJoon\그리디\정렬 들어가는 것\1449 - 수리공 항승.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
